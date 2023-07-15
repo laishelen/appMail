@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { EmailService } from '../services/email.service';
-import { MensagemErro } from 'src/app/models/mensagemerro';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 
 @Component({
@@ -12,12 +11,7 @@ import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition
 export class AppMailComponent {
 
   horizontalPosition: MatSnackBarHorizontalPosition = 'left';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
-
-  MensagemErro: MensagemErro={
-    ErrorCode:0,
-    ErrorMessage:''
-  }
+  verticalPosition: MatSnackBarVerticalPosition = 'top'
 
   res: string = '';
   err: string = '';
